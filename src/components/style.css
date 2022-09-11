@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-background {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+
+.list {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 310px;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.task-container {
+  display: flex;
+  max-width: 70vh;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  border: 10px solid #131a28;
+  color: white;
+
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 20px;
+  margin: 0 auto 20px;
+}
+
+.heading-text {
+  color: black;
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+
+  padding: 15px 25px;
+}
+
+.footer-text {
+  color: #131a28;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  padding: 15px 25px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+.task-complete {
+  text-decoration: line-through;
+  color: white;
+}
+
+.add-button {
+  background-color: black;
+
+  border: ;
+  color: white;
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 10px 15px;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.text-input {
+  border: #1cdbf5 2px solid;
+  outline: none;
+
+  width: 310px;
+  font-size: 18px;
+  padding: 10px 15px;
+
+  font-weight: bold;
+}
+
+.list-item {
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  width: 400px;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 15px 0;
+  color: #131a28;
+  font-weight: bold;
+  text-align: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.delete-icon {
+  height: 26px;
+  cursor: pointer;
+}
+.no-item-text {
+  color: red;
+  font-size: 17px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+}
