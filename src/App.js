@@ -27,7 +27,9 @@ export default function App() {
             className="text-input"
             placeholder="type here..."
             value={text}
-            onChange={(event) => setText(event.target.value)}
+            onChange={(event) => {
+              setText(event.target.value);
+            }}
           />
           <button disabled={!text} className="add-button" onClick={addNote}>
             ADD
